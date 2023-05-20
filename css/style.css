@@ -9,6 +9,7 @@ body {
     max-width: 1540px;
     padding: 0px 32px;
     margin: auto;
+    width: 100%;
 }
 .bg {
     position: absolute;
@@ -25,6 +26,7 @@ body {
     filter: blur(2px);
     backdrop-filter: blur(15.5px);
 }
+/* навигация */
 .hamburger {
     display: none;
 }
@@ -33,6 +35,10 @@ nav {
     width: 100%;
     padding: 8px 0;
     z-index: 10;
+    transition: 0.4s;
+}
+.nav_white {
+    background-color: #f1dbeaf9;
 }
 
 .nav__elements {
@@ -66,6 +72,7 @@ nav {
 .nav__phone:hover {
     transform: scale(1.1);
 }
+/* Header */
 header {
     min-height: 100vh;
     position: relative;
@@ -79,6 +86,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 .header__info {
     flex-grow: 1;
@@ -86,17 +94,16 @@ header {
 .header__location {
     font-weight: 300;
     display: inline-block;
-    transform: translateX(50%);
     margin-bottom: 10px;
 }
 h1 {
-    font-size: 200px;
+    font-size: 150px;
     opacity: 0.7;
     margin-bottom: 30px;
 }
 h1 span {
     display: block;
-    font-size: 150px;
+    font-size: 70px;
     text-align: right;  
 }
 .header__info p {
@@ -104,9 +111,11 @@ h1 span {
     font-size: 16px;
     line-height: 160%;
     margin-bottom: 100px;
+    max-width: 550px;
 }
 .header__elements img {
     opacity: 0.7;
+    max-width: 500px;
 }
 .header__info a {
     color: black;
@@ -150,4 +159,70 @@ h1 span {
 }
 .header__info a:hover::after {
     opacity: 0;
+}
+/* секция о нас */
+section {
+    padding: 40px 0;
+}
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 36px;
+}
+.about-us__elements {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 100px;
+}
+.about-us__photo {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+}
+.about-us__photo img {
+    border-top-left-radius: 80px;
+    display: block;
+    z-index: 0;
+    width: 100%;
+}
+.about-us__photo .Rospis {
+    position: absolute;
+    border-radius: none;
+    z-index: 2;
+    width: 45%;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 0);
+}
+.about-us__photo h3 {
+    background: rgba(252, 252, 252, 0.915);
+    padding: 7px 20px;
+    display: inline-block;
+    border-top-left-radius: 20px;
+    transform: translate(10px, -30%);
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 2;
+}
+.about__ball {
+    position: absolute;
+    bottom: 0;
+    border-radius: 100%;
+    left: 0;
+    transform: translate(-15%, 30%);
+    backdrop-filter: none;
+    width: 150%;
+    height: 50%;
+}
+.about-us__photo p {
+    padding: 0 20px;
+    transform: translateX(10px);
+    z-index: 2;
+}
+.about-us__info p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    max-width: 550px;
 }
