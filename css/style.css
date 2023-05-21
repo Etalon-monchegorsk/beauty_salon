@@ -26,7 +26,9 @@ body {
     filter: blur(2px);
     backdrop-filter: blur(15.5px);
 }
+
 /* навигация */
+
 .hamburger {
     display: none;
 }
@@ -72,7 +74,9 @@ nav {
 .nav__phone:hover {
     transform: scale(1.1);
 }
+
 /* Header */
+
 header {
     min-height: 100vh;
     position: relative;
@@ -160,7 +164,9 @@ h1 span {
 .header__info a:hover::after {
     opacity: 0;
 }
+
 /* секция о нас */
+
 section {
     padding: 40px 0;
 }
@@ -226,3 +232,6 @@ h2 {
     line-height: 160%;
     max-width: 550px;
 }
+
+/* секция почему выбирают нас */
+
