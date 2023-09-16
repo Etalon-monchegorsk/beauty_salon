@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+* {
+    
+}
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -8,6 +11,11 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
+h2 {
+    font-size: 52px;
+    text-align: center;
+}
 h2,h3 {
     font-family: 'Viaoda Libre', cursive;
 }
+

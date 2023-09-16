@@ -2,6 +2,9 @@ let hamburger = document.querySelector(".hamburger");
 let navLinks = document.querySelector(".nav__links");
 let navPhone = document.querySelector(".nav__phone");
 let nav = document.querySelector("nav");
+let servicesItemAll = document.querySelectorAll(".services__item");
+let servicesImgAll = document.querySelectorAll(".services__img img");
+let servicesSpanAll = document.querySelectorAll(".services__spans span")
 
 hamburger.onclick = function () {
     hamburger.classList.toggle("hamburger_active");
@@ -28,3 +31,29 @@ function navShow() {
     }
 }
 navShow();
+// функция айтемов, картинок, включение выключение спанов
+for(let i = 0; i < servicesItemAll.length; i++) {
+    servicesItemAll[i].onclick = function() {
+        for(let a = 0; a < servicesItemAll.length; a++) {
+            servicesItemAll[a].classList.remove("_active");
+            servicesImgAll[a].classList.remove("_show");
+            servicesSpanAll[a].classList.remove("services__span_active")
+        }
+        servicesItemAll[i].classList.add("_active");
+        servicesImgAll[i].classList.add("_show");
+        servicesSpanAll[i].classList.add("services__span_active")
+    }
+}
+// функция спан кликабельность
+for(let i = 0; i < servicesItemAll.length; i++) {
+    servicesSpanAll[i].onclick = function() {
+        for(let a = 0; a < servicesItemAll.length; a++) {
+            servicesItemAll[a].classList.remove("_active");
+            servicesImgAll[a].classList.remove("_show");
+            servicesSpanAll[a].classList.remove("services__span_active")
+        }
+        servicesItemAll[i].classList.add("_active");
+        servicesImgAll[i].classList.add("_show");
+        servicesSpanAll[i].classList.add("services__span_active")
+    }
+}
