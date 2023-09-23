@@ -1,9 +1,47 @@
 @media (max-width: 1345px) {
     h1 {
-        font-size: 160px;
+        font-size: 130px;
     }
     h1 span {
-        font-size: 100px;
+        font-size: 60px;
+    }
+}
+@media (max-width: 1300px) {
+    .slider-prev {
+        top: 100%;
+        left: 30%;
+    }
+    .slider-next {
+        top: 100%;
+        right: 30%;
+    }
+}
+@media (max-width: 1200px) {
+    .footer__elements {
+        gap: 10vw;
+    }
+    .price-detailed-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 32px 120px;
+    }
+    .services__elements {
+        gap: 40px;
+        position: relative;
+    }
+    .services__item h4 {
+        font-size: 18px;
+    }
+    .services__list {
+        width: max-content;
+    }
+    .services__img {
+        width: auto;
+        flex-grow: 1;
+    }
+    .services__spans span {
+        width: 10px;
+        height: 10px;
     }
 }
 @media (max-width: 1124px) {
@@ -11,14 +49,30 @@
         font-size: 120px;
     }
     h1 span {
-        font-size: 80px;
+        font-size: 50px;
     }
     .header__elements img {
         width: 50%;
         min-width: 400px;
     }
+    .bg-bottom {
+        height: 25vw;
+    }
+    .choose-us {
+        padding-bottom: 25vw;
+    }
 }
 @media(max-width: 992px)  {
+    .footer__elements {
+        flex-direction: column-reverse;
+        gap: 140px;
+    }
+    .price .slider-prev {
+        left: 16px;
+    }
+    .price .slider-next {
+        right: 16px;
+    }
     .nav__elements {
         gap: 0;
         justify-content: space-between;
@@ -33,16 +87,73 @@
         max-height: 956px;
         min-height: 0;
     }
-}
-@media(max-width: 820px) {
     h1 {
         font-size: 100px;
     }
     h1 span {
+        font-size: 40px;
+    }
+    .header__elements img {
+        width: 40%;
+    }
+    .services__img {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        bottom: 5%;
+        left: 8px;
+        z-index: 0;
+        opacity: 0.2;
+    }
+    .services__decoration {
+        display: none;
+    }
+    .services__spans {
+        display: none;
+    }
+    .services__img img {
+        border-radius: 15px;
+        
+    }
+    .services__list {
+        position: relative;
+        z-index: 1;
+    }
+    .services__elements a {
+        left: 0;
+        transform: translate(50%, -50%);
+    }
+    .services__item {
+        background-color: rgba(255, 255, 255, 0.284);
+    }
+}
+@media(max-width: 820px) {
+    /* h1 {
+        font-size: 100px;
+    }
+    h1 span {
        font-size: 60px; 
+    } */
+    .header__elements img {
+        min-width: 300px;
     }
 }
 @media(max-width: 768px) {
+    .price-detailed-list__item p {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .price-detailed-list__item h4 {
+        font-size: 16px;
+    }
+    .slider-prev {
+        top: 100%;
+        left: 0;
+    }
+    .slider-next {
+        top: 100%;
+        right: 0;
+    }
     .hamburger {
         display: block;
         width: 40px;
@@ -135,32 +246,101 @@
         padding-bottom: 50px;
     }
     h1 {
-        font-size: 160px;
+        font-size: 90px;
     }
     h1 span {
-        font-size: 100px;
+        font-size: 50px;
     }
-
-
+    /* стили о нас */
+    .about-us__elements {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 @media (max-width: 510px) {
+    
+    .footer__iframe-wrapper iframe {
+        width: 100%;
+    }
+    .footer__iframe-wrapper {
+        width: 90%;
+    }
+    .footer__iframe-wrapper::before {
+        display: none;
+    }
+    .footer__info p, .footer__info a {
+        font-size: 17px;
+    }
+    .footer__info i {
+        font-size: 22px;
+    }
+    .footer__info span {
+        font-size: 14px;
+    }
+    .price-detailed-list br {
+        display: block;
+    }
+    .price .slider-prev {
+        left: 16px;
+    }
+    .price .slider-next {
+        right: 16px;
+    }
+    .container {
+        padding: 0 16px;
+    }
     h1 {
-        font-size: 130px;
+        font-size: 85px;
     }
     h1 span {
-        font-size: 80px;
+        font-size: 40px;
+    }
+    .nav__logo img {
+        width: 70px;
+    }
+    .about__ball {
+        width: 100%;
+        transform: translate(0, 30%);
+    }
+    .about-us__photo .Rospis {
+        transform: translate(-50%, 140%);
+    }
+    .about-us__photo {
+        min-width: 100%;
+    }
+    .services__elements {
+        padding: 20px 10px 50px 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .services__list {
+        width: 100%;
+    }
+    .services__elements a {
+        transform: translate(20px, 30px);
+        position: relative;
+        width: 60%;
+    }
+    .services__elements a::after {
+        display: none;
+        content: "";
+    }
+    .services__elements a::before {
+        width: 100%;
     }
 }
 @media (max-width: 420px) {
+    
     header {
         min-height: 100vh;
         padding-top: 50px;
     }
     h1 {
-        font-size: 110px;
+        font-size: 70px;
     }
     h1 span {
-        font-size: 50px;
+        font-size: 30px;
     }
     .header__elements a {
         height: 48px;
@@ -182,3 +362,23 @@
     }
 }
 
+/* слайдеры - медиа запросы */
+
+@media (min-width: 320px) {
+    .swiper-master {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+@media (min-width: 660px) {
+    .swiper-master {
+        width: 100%;
+        max-width: 660px;
+    }
+}
+@media (min-width: 1000px) {
+    .swiper-master {
+        width: 100%;
+        max-width: 1000px;
+    }
+}
