@@ -728,6 +728,13 @@ footer {
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.353);
     z-index: 1;
 }
+.footer__form input .datatime {
+    padding: 20px 40px;
+    height: 56px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.353);
+    z-index: 1;
+}
 
 .footer__form h3 {
     font-size: 36px;
@@ -740,6 +747,7 @@ footer {
 select {
     padding: 20px 40px;
     height: 56px;
+    background-color: white;
     border-radius: 100px;
     margin-bottom: 20px;
     width: 300px;
