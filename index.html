@@ -20,13 +20,13 @@
     <nav>
         <div class="container">
             <div class="nav__elements">
-                <a class="nav__logo" href="">
+                <a class="nav__logo" href="#Header">
                     <img src="./img/логотипы/logoBlack.png" alt="">
                 </a>
                 <div class="nav__links">
-                    <a href="">Услуги</a>
-                    <a href="">Мастера</a>
-                    <a href="">Прайс</a>
+                    <a href="#Service">Услуги</a>
+                    <a href="#Masters">Мастера</a>
+                    <a href="#Price">Прайс</a>
                     <a href="">Контакты</a>
                 </div>
                 <a class="nav__phone" href="tell:+79999999999">+7 (999) 999 99 99</a>
@@ -38,17 +38,17 @@
             </div>
         </div>
     </nav>
-    <header>
+    <header id="Header">
         <div class="container">
             <div class="header__elements">
                 <div class="header__info">
-                    <span class="header__location">Салон красоты Мончегорск</span>
-                    <h1>Эталон <span>Салон красоты</span></h1>
+                    <span class="header__location">Студия здоровья и красоты Мончегорск</span>
+                    <h1>Эталон</h1>
                     <p>
                         Нашим принципам работы стали доброжелательность, чуткое отношение к каждому клиенту и высокий
                         уровень сервиса.
                     </p>
-                    <a href="#">Записаться</a>
+                    <a target="_blank" href="https://vk.com/public94917870">Записаться</a>
                 </div>
                 <img src="./img/другое/headerIMG.png" alt="">
             </div>
@@ -113,7 +113,7 @@
         </div>
         <img class="bg-bottom" src="./img/другое/bg.png" alt="">
     </section>
-    <section class="services">
+    <section class="services" id="Service">
         <div class="bg">
             <div class="ball"></div>
         </div>
@@ -121,13 +121,13 @@
             <h2>Услуги</h2>
             <div class="services__elements">
                 <div class="services__list">
-                    
+
                 </div>
                 <div class="services__img">
-                    
+
                     <div class="services__decoration"></div>
                     <div class="services__spans">
-                        
+
                     </div>
                 </div>
                 <a href="#">Записаться</a>
@@ -135,8 +135,8 @@
 
         </div>
     </section>
-    <section class="master">
-        
+    <section class="master" id="Masters">
+
         <div class="container">
             <h2>Наши мастера</h2>
             <div class="swiper swiper-master">
@@ -149,44 +149,103 @@
             <div class="ball"></div>
         </div>
     </section>
-    <section class="price">
+    <section class="price" id="Price">
         <div class="container">
             <h2>Прайс на услуги</h2>
             <div class="price__slider swiper">
                 <div class="price__list swiper-wrapper">
-                    
+
                 </div>
             </div>
             <div class="slider-prev-next">
                 <div class="slider-prev"></div>
                 <div class="slider-next"></div>
             </div>
-            
+
         </div>
 
     </section>
-    <footer> 
+    <footer>
         <div class="container">
+            <form class="footer__form">
+                <div class="bg">
+                    <div class="ball"></div>
+                    <div class="ball1"></div>
+                </div> 
+                <h3>Записаться</h2>
+                    <div class="form__elements">
+                        <select required aria-placeholder="Услуга" name="" id="">
+                            <option value="">Услуга</option>
+                            <option value="Инъекционная косметология лица">
+                                Инъекционная косметология лица
+                            </option>
+                            <option value="Нитевой Фейслифтинг">
+                                Нитевой Фейслифтинг
+                            </option>
+                            <option value="Контурная пластика">
+                                Контурная пластика
+                            </option>
+                            <option value="Комплексные уходы для лица">
+                                Комплексные уходы для лица
+                            </option>
+                            <option value="Массажи ручные и аппаратные">
+                                Массажи ручные и аппаратные
+                            </option>
+                            <option value="Аппаратные методики">
+                                Аппаратные методики
+                            </option>
+                            <option value="Депиляция">
+                                Депиляция
+                            </option>
+                            <option value="Консультация">
+                                Консультация
+                            </option>
+                        </select>
+                        <input class="name" required type="text" placeholder="Имя">
+                        <input class="tell" required type="" placeholder="Телефон">
+                        <input class="datetime" required type="datetime" placeholder="Дата и Время">
+                        <button class="btn" type="submit">
+                            <strong>Отправить</strong>
+                            <div id="container-stars">
+                              <div id="stars"></div>
+                            </div>
+                          
+                            <div id="glow">
+                              <div class="circle"></div>
+                              <div class="circle"></div>
+                            </div>
+                          </button>
+                    </div>
+            </form>
             <div class="footer__elements">
                 <div class="footer__iframe-wrapper">
-                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad77427d62350cf1b798fcb82fb9620a4162e9261d4b7914f12a5912622b2a606&amp;source=constructor" width="400" height="500" frameborder="0"></iframe>
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad77427d62350cf1b798fcb82fb9620a4162e9261d4b7914f12a5912622b2a606&amp;source=constructor"
+                        width="400" height="500" frameborder="0"></iframe>
                 </div>
-                
+
                 <ul class="footer__info">
-                    <li><i class="fa-solid fa-flask"></i><p>Мы находимся в г.Мончегорск<span>Улица Восточная дом 105</span></p></li>
-                    <li><i class="fa-regular fa-clock"></i><p>Режим работы<span>с 9:00 до 21:00</span></p></li>
+                    <li><i class="fa-solid fa-flask"></i>
+                        <p>Мы находимся в г.Мончегорск<span>Улица Восточная дом 105</span></p>
+                    </li>
+                    <li><i class="fa-regular fa-clock"></i>
+                        <p>Режим работы<span>с 9:00 до 21:00</span></p>
+                    </li>
                     <li><i class="fa-solid fa-phone"></i><a href="tel:">7 (999) 999 99 99</a></li>
-                    <li><i class="fa-regular fa-envelope"></i><a href="mailto:bitnit633@gmail.co">uchebnycenter@gmail.com</a></li>
+                    <li><i class="fa-regular fa-envelope"></i><a
+                            href="mailto:bitnit633@gmail.co">uchebnycenter@gmail.com</a></li>
                 </ul>
             </div>
             <p class="copyright">Copyright © 2023 Все права защищены.</p>
         </div>
-        
+
     </footer>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./js/store.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/sendForm.js"></script>
     <script src="https://kit.fontawesome.com/0dfb09cd7e.js" crossorigin="anonymous"></script>
 </body>
