@@ -739,6 +739,7 @@ footer {
 
 select {
     padding: 20px 40px;
+    height: 56px;
     border-radius: 100px;
     margin-bottom: 20px;
     width: 300px;
