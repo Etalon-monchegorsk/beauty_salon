@@ -499,10 +499,12 @@
 }
 
 @supports (-webkit-touch-callout: default) {
-
     .data-input {
         display: block;
-
+    }
+    #data {
+        opacity: 0;
+        visibility: hidden;
     }
 }
 
