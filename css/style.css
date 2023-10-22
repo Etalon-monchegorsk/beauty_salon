@@ -675,6 +675,19 @@ footer {
     margin-bottom: 200px;
 }
 
+.data-input {
+    padding: 20px 40px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    background-color: white;
+    height: 56px;
+    width: 300px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.353);
+    z-index: 1;
+    color: rgb(142, 142, 142);
+    display: none;
+}
+
 .footer__form .bg {
     position: absolute;
     width: 100%;
@@ -726,6 +739,9 @@ footer {
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.353);
     z-index: 1;
 }
+.footer__form input:focus {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.353);
+}
 
 .footer__form input .datatime {
     padding: 20px 40px;
@@ -752,6 +768,9 @@ select {
     width: 300px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.353);
     z-index: 1;
+}
+select:focus {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.353);
 }
 
 .footer__form button {
