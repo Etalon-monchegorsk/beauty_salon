@@ -57,3 +57,12 @@ for(let i = 0; i < servicesItemAll.length; i++) {
         servicesSpanAll[i].classList.add("services__span_active")
     }
 }
+function ChangeDate() {
+    let inputDate = document.querySelector("#data");
+    let divDate = document.querySelector(".data-input");
+    inputDate.onchange = function () {
+        let dataText = inputDate.value;
+        divDate.innerText = dataText;
+    }
+}
+ChangeDate();
