@@ -171,7 +171,7 @@
                 <div class="bg">
                     <div class="ball"></div>
                     <div class="ball1"></div>
-                </div> 
+                </div>
                 <h3>Записаться</h2>
                     <div class="form__elements">
                         <select required aria-placeholder="Услуга" name="" id="">
@@ -202,19 +202,14 @@
                             </option>
                         </select>
                         <input class="name" required type="text" placeholder="Имя">
-                        <input class="tell" required type="tel" placeholder="Телефон">
-                        <input class="datetime" required type="datetime-local" placeholder="Дата и Время">
-                        <button class="btn" type="submit">
-                            <strong>Отправить</strong>
-                            <div id="container-stars">
-                              <div id="stars"></div>
+                        <input id="phone" class="tell" required type="tel" placeholder="Телефон">
+                        <label for="data">
+                            <div class="data-input">
+                                Дата и время
                             </div>
-                          
-                            <div id="glow">
-                              <div class="circle"></div>
-                              <div class="circle"></div>
-                            </div>
-                          </button>
+                        </label>
+                        <input id="data" class="datetime" required type="datetime-local" placeholder="Дата и Время">
+                        <button class="btn" type="submit">Отправить</button>
                     </div>
             </form>
             <div class="footer__elements">
