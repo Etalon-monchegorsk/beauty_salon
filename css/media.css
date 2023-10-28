@@ -506,7 +506,7 @@
     #data, #select {
         opacity: 0;
         overflow: hidden;
-        height: 0;
+        height: 0 !important;
     }
 
 }
