@@ -19,9 +19,16 @@ Form.onsubmit = function () {
     axios.post(url, params)
         .then(response => {
             console.log('Сообщение успешно отправлено:', response.data);
+            let divWrapperForm = document.querySelector(".form-wrapper");
+            divWrapperForm.classList.add("form-wrapper_active");
+            setTimeout(() => {
+                Form.reset();
+                divWrapperForm.classList.remove("form-wrapper_active");
+            }, 3000); 
         })
         .catch(error => {
             console.error('Ошибка при отправке сообщения:', error);
         });
+        
         return false
 }
