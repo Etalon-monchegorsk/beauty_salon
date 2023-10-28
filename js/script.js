@@ -65,4 +65,30 @@ function ChangeDate() {
         divDate.innerText = dataText;
     }
 }
+function ChangeSelect() {
+    let inputSelect = document.querySelector("#select");
+    let divSelect = document.querySelector(".select-input");
+    inputSelect.onchange = function () {
+        let selectText = inputSelect.value;
+        divSelect.innerText = selectText;
+    }
+}
+ChangeSelect();
 ChangeDate();
+
+
+// var date_string = "2023-10-29T15:54";
+
+// // Преобразование строки в объект Date
+// var date_obj = new Date(date_string);
+
+// // Функция для добавления ведущего нуля, если число < 10
+// function pad(number) {
+//   if (number < 10) {
+//     return "0" + number;
+//   }
+//   return number;
+// }
+
+// // Форматирование даты в желаемый формат
+// var formatted_date = pad(date_obj.getDate()) + "." + pad(date_obj.getMonth() + 1) + "." + date_obj.getFullYear() + " " + pad(date_obj.getHours()) + ":" + pad(date_obj.getMinutes());
