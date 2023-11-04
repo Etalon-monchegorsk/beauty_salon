@@ -1,6 +1,7 @@
 let hamburger = document.querySelector(".hamburger");
 let navLinks = document.querySelector(".nav__links");
 let navPhone = document.querySelector(".nav__phone");
+let links = document.querySelectorAll(".nav__elements a")
 let nav = document.querySelector("nav");
 let servicesItemAll = document.querySelectorAll(".services__item");
 let servicesImgAll = document.querySelectorAll(".services__img img");
@@ -11,6 +12,14 @@ hamburger.onclick = function () {
     navLinks.classList.toggle("nav__links_active");
     navPhone.classList.toggle("nav__phone_active");
 }
+for (let i = 0; i < links.length; i++) {
+    links[i].onclick = function () {
+        hamburger.classList.remove("hamburger_active");
+        navLinks.classList.remove("nav__links_active");
+        navPhone.classList.remove("nav__phone_active");
+    }
+}
+    
 function navShow() {
     let startHeight = window.pageYOffset;
     window.onscroll = function () {
@@ -32,9 +41,9 @@ function navShow() {
 }
 navShow();
 // функция айтемов, картинок, включение выключение спанов
-for(let i = 0; i < servicesItemAll.length; i++) {
-    servicesItemAll[i].onclick = function() {
-        for(let a = 0; a < servicesItemAll.length; a++) {
+for (let i = 0; i < servicesItemAll.length; i++) {
+    servicesItemAll[i].onclick = function () {
+        for (let a = 0; a < servicesItemAll.length; a++) {
             servicesItemAll[a].classList.remove("_active");
             servicesImgAll[a].classList.remove("_show");
             servicesSpanAll[a].classList.remove("services__span_active")
@@ -45,9 +54,9 @@ for(let i = 0; i < servicesItemAll.length; i++) {
     }
 }
 // функция спан кликабельность
-for(let i = 0; i < servicesItemAll.length; i++) {
-    servicesSpanAll[i].onclick = function() {
-        for(let a = 0; a < servicesItemAll.length; a++) {
+for (let i = 0; i < servicesItemAll.length; i++) {
+    servicesSpanAll[i].onclick = function () {
+        for (let a = 0; a < servicesItemAll.length; a++) {
             servicesItemAll[a].classList.remove("_active");
             servicesImgAll[a].classList.remove("_show");
             servicesSpanAll[a].classList.remove("services__span_active")
