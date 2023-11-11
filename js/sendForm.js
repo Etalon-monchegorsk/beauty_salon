@@ -28,6 +28,12 @@ Form.onsubmit = function () {
         })
         .catch(error => {
             console.error('Ошибка при отправке сообщения:', error);
+            let divWrapperFormError = document.querySelector(".form-wrapper-error");
+            divWrapperFormError.classList.add("form-wrapper-error_active");
+            setTimeout(() => {
+                Form.reset();
+                divWrapperForm.classList.remove("form-wrapper-error_active");
+            }, 3000);
         });
         
         return false
